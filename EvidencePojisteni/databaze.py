@@ -118,7 +118,6 @@ class Databaze:
         """
         print("Seznam všech uživatelů:\n")
         for pojisteny in self.evidence:
-            """sorted(self.evidence, key=lambda pojisteny: pojisteny._jmeno): jak to seřadit s českou diakritikou?"""
             print(str("{} {} - Věk: {}, Kontakt: {}".format
                       (pojisteny._jmeno, pojisteny._prijmeni, pojisteny._vek, pojisteny._telefonni_cislo)))
         print("Počet uživatelů v databázi: {}".format(self.dalsi_uzivatel - 1))
@@ -147,11 +146,3 @@ class Databaze:
 
     def nastav_zpravu(self, zprava):
         print(zprava)
-        """Method nastav zpravu may be static line 63??
-        Shadows name uzivatel from outer scope line 45
-        Protected members?
-        comments
-        cvicení - musím je odevzdat?
-        jak radit podle abecedy s ceskymi znaky?
-        musí zůstat jména uložená po ukončení programu?
-        """
